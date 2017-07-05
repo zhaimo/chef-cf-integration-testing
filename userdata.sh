@@ -8,7 +8,7 @@ CHEF_ORGANIZATION="default"    # Leave as "default"; do not change. AWS OpsWorks
 NODE_ENVIRONMENT="development"            # e.g. development, staging, onebox ...
 CHEF_CLIENT_VERSION="12.19.36" # latest if empty
 #RUN_LIST="recipe[chef-client],recipe[apachecookbook]"
-RUN_LIST="role[apacheserver],recipe[db2-cookbook]"
+RUN_LIST="recipe[fmw_wls::install.rb]"
 set -e -o pipefail
 AWS_CLI_TMP_FOLDER=$(mktemp --directory "/tmp/awscli_XXXX")
 CHEF_CA_PATH="/etc/chef/opsworks-cm-ca-2016-root.pem"
