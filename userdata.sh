@@ -6,7 +6,7 @@ CHEF_SERVER_ENDPOINT="hz-chef-dlkuvp7xysf9d9uj.us-east-1.opsworks-cm.io/" # Prov
 
 CHEF_ORGANIZATION="default"    # Leave as "default"; do not change. AWS OpsWorks for Chef Automate always creates the organization "default"
 NODE_ENVIRONMENT="development"            # e.g. development, staging, onebox ...
-CHEF_CLIENT_VERSION="" # latest if empty
+CHEF_CLIENT_VERSION="12.19.36" # latest if empty
 #RUN_LIST="recipe[chef-client],recipe[apachecookbook]"
 RUN_LIST="role[apacheserver],recipe[db2-cookbook]"
 set -e -o pipefail
