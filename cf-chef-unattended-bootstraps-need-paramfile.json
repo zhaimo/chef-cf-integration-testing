@@ -190,7 +190,7 @@
       "Type" : "AWS::EC2::Instance",
 
           "Properties": {
-            "ImageId" : "ami-df9dfec9",
+            "ImageId" : "ami-524f4b44",
             "InstanceType"   : { "Ref" : "InstanceType" },
             "SecurityGroupIds": [
                 {
